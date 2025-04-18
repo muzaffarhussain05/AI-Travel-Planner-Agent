@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0077b6;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkboxes label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #005f8e;
+  }
+  
+  .result {
+    margin-top: 20px;
+    background: #e6f2ff;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+  }
+  #result {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #008080;
+    border-radius: 8px;
+    font-size: 1.05rem;
+ 
+  }
+  
+  #result h2, #result h3 {
+    color: #008080;
+    margin-top: 1rem;
+  }
+  
+  #result a {
+    color: #0077cc;
+    text-decoration: underline;
+  }
+  #result *{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  

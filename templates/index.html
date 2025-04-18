@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Travel Planner 🌍</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>🌎 AI Travel Planner</h1>
+    <p>Your personal travel assistant powered by AI</p>
+
+    <div class="form-group">
+      <label for="destination">🌍 Destination:</label>
+      <input type="text" id="destination" placeholder="Enter your travel destination">
+    </div>
+
+    <div class="form-group">
+      <label for="duration">📅 Duration (days):</label>
+      <input type="number" id="duration" min="1" max="30" value="5">
+    </div>
+
+    <div class="form-group">
+      <label for="budget">💰 Budget Level:</label>
+      <select id="budget">
+        <option >Low</option>
+        <option selected>Moderate</option>
+        <option>Luxury</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>🎯 Travel Style:</label>
+      <div class="checkboxes">
+        <label><input type="checkbox" value="Culture" checked> Culture</label>
+        <label><input type="checkbox" value="Nature" checked> Nature</label>
+        <label><input type="checkbox" value="Adventure"> Adventure</label>
+        <label><input type="checkbox" value="Relaxation"> Relaxation</label>
+        <label><input type="checkbox" value="Food"> Food</label>
+        <label><input type="checkbox" value="Shopping"> Shopping</label>
+      </div>
+    </div>
+
+    <button onclick="generatePlan()">✨ Generate My Perfect Travel Plan</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>
