@@ -5,9 +5,9 @@ from phi.model.groq import Groq
 from googleapiclient.discovery import build
 
 # Set environment vars
-os.environ["GROQ_API_KEY"] = "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"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDsbLby160bS2KDez8KLcifylmK1pEajKU"
-os.environ["SEARCH_ENGINE_ID"] = "9641cec3a5fba48c4"
+os.environ["GROQ_API_KEY"] = "your api key"
+os.environ["GOOGLE_API_KEY"] = "your api key"
+os.environ["SEARCH_ENGINE_ID"] = "search engine id"
 
 google_api_key = os.environ["GOOGLE_API_KEY"]
 search_engine_id = os.environ["SEARCH_ENGINE_ID"]
